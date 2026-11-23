@@ -5,18 +5,20 @@
 # news-image-20261122
 
 A program that draws one image summing up the world's news of
-Sunday, 22 November 2026 — a newspaper-style front page ("The Daily
-Globe") with the day's seven biggest stories: the COP31 climate talks
-collapsing in Antalya, the Russian strike on a Kyiv apartment block,
-the explosion that damaged a Russian ship at Benghazi, the Hormuz
-tanker strikes, settler arson in the West Bank, China easing
-margin-trading rules, and the US pressing Nvidia over AI chips sold
-to China — plus the day's other news in the strip below.
+Sunday, 22 November 2026 — a dense, illustrated newspaper front page
+("The Daily Globe", v2) with 25 stories: a masthead naming the day, a
+numbers strip, three lead stories with drawn scenes (the Kyiv apartment
+strike, the COP31 collapse in Antalya, tankers ablaze off Hormuz),
+ten more illustrated stories (Benghazi ship blast, West Bank arson,
+China's margin-rule cut, the Nvidia chip probe, the Nigeria boat
+capsize, and more), a world map with pins, an "also in the news" index,
+and a date-check footer.
 
 `main.py` is the whole entry: Python 3.13, standard library only, no
-network. It draws the infographic in code (hand-rolled 5x7 pixel font
-and a minimal PNG writer) and writes a deterministic 1024x1024 PNG
-to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`).
+network. It draws the infographic in code — a hand-built single-stroke
+vector lettering set, a small 2-D drawing engine, and drawn scenes per
+story — and writes a deterministic 1024x1024 PNG to
+`$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`).
 
 Run it:
 
